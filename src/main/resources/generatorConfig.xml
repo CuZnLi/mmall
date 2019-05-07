@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE configuration
+<!DOCTYPE generatorConfiguration
         PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
-<configuration>
+<generatorConfiguration>
     <!--导入属性配置-->
     <properties resource="datasource.properties"></properties>
 
@@ -36,7 +36,7 @@
             <property name="enableSubPackages" value="false"/>
             <property name="constructorBased" value="true"/>
             <property name="trimStrings" value="true"/>
-            建立的Model对象是否不可改变，即生成的Model对象不会有setter方法，只有构造方法
+            <!--建立的Model对象是否不可改变，即生成的Model对象不会有setter方法，只有构造方法-->
             <property name="immutable" value="false"/>
         </javaModelGenerator>
 
@@ -73,4 +73,4 @@
 
     </context>
 
-</configuration>
+</generatorConfiguration>
